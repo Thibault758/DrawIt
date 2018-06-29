@@ -1,0 +1,137 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  text-align: center;
+  font-family: "roboto";
+  background-image: linear-gradient(#13F1FC, #0470DC);
+}
+.b{
+  color: #4384d4;
+}
+
+/** HEADER **/
+header {
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+}
+header img {
+  display: inline-block;
+  width: 90px;
+  margin-top: 4px;
+}
+header p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  height: 54.8px;
+  line-height: 58.8px;
+}
+.draw {
+  font-family: "Zeyada";
+  font-size: 1.8rem;
+  color: red;
+}
+
+/** CANVAS **/
+
+#drawing {
+  cursor: crosshair;
+  position: relative;
+  z-index: 1;
+  margin-top: 120PX;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: #cbe5f2;
+  box-shadow: 3px 3px 10px black;
+}
+.crayon, .epaisseur {
+  position: absolute;
+  cursor: pointer;
+  width: 150px;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+.crayon1 {
+  margin-left: -670px;
+  top: 204px;
+}
+.crayon2 {
+  margin-left: -670px;
+  top: 266px;
+}
+.crayon3 {
+  margin-left: -670px;
+  top: 328px;
+}
+.crayon4 {
+  margin-left: -670px;
+  top: 390px;
+}
+.crayon5 {
+  margin-left: -670px;
+  top: 452px;
+}
+.crayon6 {
+  margin-left: -670px;
+  top: 514px;
+}
+.epaisseur1 {
+  height: 10px;
+  top: 284px;
+  margin-left: -90px;
+}
+.epaisseur2 {
+  height: 20px;
+  top: 314px;
+  margin-left: -90px;
+}
+.epaisseur3 {
+  height: 30px;
+  top: 354px;
+  margin-left: -90px;
+}
+.epaisseur4 {
+  height: 40px;
+  top: 404px;
+  margin-left: -90px;
+}
+.crayon1:hover, .crayon2:hover, .crayon3:hover, .crayon4:hover, .crayon5:hover, .crayon6:hover  {
+  transform: translateX(-40px);
+}
+.epaisseur1:hover, .epaisseur2:hover, .epaisseur3:hover, .epaisseur4:hover, .epaisseur5:hover, .epaisseur6:hover  {
+  transform: translateX(+40px);
+}
+#effacer {
+  border-radius: 20PX;
+  box-shadow: 1px 1px 10px black;
+  cursor: pointer;
+  color: RED;
+  background-color: BLACK;
+  margin-top: 30px;
+  padding: 8px 10px 0 10px;
+  font-size: 1.5rem;
+  font-family: "Zeyada";
+}
+/** FOOTER **/
+
+footer {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: #7a7a80;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+/* RESPONSIVE MOBILE */
+
+}
